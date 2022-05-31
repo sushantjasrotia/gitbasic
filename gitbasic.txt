@@ -1,0 +1,349 @@
+Sushant Jasrotia@Accular MINGW64 ~
+$ cd desktop
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop
+$ ls
+desktop.ini  pre/  project/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop
+$ cd project
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project
+$ git init
+Initialized empty Git repository in C:/Users/Sushant Jasrotia/Desktop/project/.git/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls -a
+./  ../  .git/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls .git
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ touch name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        name.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   name.txt
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git commit -m "names.txt file added"
+[master (root-commit) cbf2a69] names.txt file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ^C
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ^C
+
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ cat names.txt
+cat: names.txt: No such file or directory
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ cat name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~
+$ cd desktop
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop
+$ ls
+desktop.ini  pre/  project/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop
+$ cd project
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project
+$ git init
+Initialized empty Git repository in C:/Users/Sushant Jasrotia/Desktop/project/.git/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls -a
+./  ../  .git/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ls .git
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ touch name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        name.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   name.txt
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git commit -m "names.txt file added"
+[master (root-commit) cbf2a69] names.txt file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   name.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git commit -m "name.txt modified"
+[master b814d40] name.txt modified
+ 1 file changed, 65 insertions(+)
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git restore --staged name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git log
+commit b814d40c3d56f2a33a28c6fb68f7ef31d3c3b94a (HEAD -> master)
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:54:46 2022 +0530
+
+    name.txt modified
+
+commit cbf2a69e0e68d735b61c65e86f2df932106638dc
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:50:07 2022 +0530
+
+    names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ rm -rf name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    name.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git commit -m "name.txt file deleted
+> "
+[master 5df3d46] name.txt file deleted
+ 1 file changed, 65 deletions(-)
+ delete mode 100644 name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git log
+commit 5df3d4665074e3236bb30083dade0f3a70cf4410 (HEAD -> master)
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:58:56 2022 +0530
+
+    name.txt file deleted
+
+commit b814d40c3d56f2a33a28c6fb68f7ef31d3c3b94a
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:54:46 2022 +0530
+
+    name.txt modified
+
+commit cbf2a69e0e68d735b61c65e86f2df932106638dc
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:50:07 2022 +0530
+
+    names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git reset  cbf2a69e0e68d735b61c65e86f2df932106638dc
+Unstaged changes after reset:
+D       name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git log
+commit cbf2a69e0e68d735b61c65e86f2df932106638dc (HEAD -> master)
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:50:07 2022 +0530
+
+    names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    name.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    name.txt
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ touch alternate.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    name.txt -> alternate.txt
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ ^C
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ touch touch learning.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   alternate.txt
+        renamed:    name.txt -> learning.txt
+        new file:   touch
+
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git stash
+Saved working directory and index state WIP on master: cbf2a69 names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git log
+commit cbf2a69e0e68d735b61c65e86f2df932106638dc (HEAD -> master)
+Author: sushantjasrotia <sushantjasrotia94@gmail.com>
+Date:   Tue May 31 16:50:07 2022 +0530
+
+    names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ cat name.txt
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git stash pop
+Removing name.txt
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   alternate.txt
+        new file:   learning.txt
+        new file:   touch
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    name.txt
+
+Dropped refs/stash@{0} (1d3260f3c160593e5140447f99a07f7df04d50ef)
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git add .
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git stash
+Saved working directory and index state WIP on master: cbf2a69 names.txt file added
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$ git stash clear
+
+Sushant Jasrotia@Accular MINGW64 ~/desktop/project (master)
+$
